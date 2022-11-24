@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/_DSC0180.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+/*Used my custom logo for the list element bullet points*/
+
+ul {
+  list-style-image: url("../images/logo-white-lists.png");
+}
+
+ul a {
+  color: black;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+
+ul a:hover {
+  color: white;
+}
+
+.self-image,
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me {
+  margin: 2rem 4rem;
+}
+
+.about-me p {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .self-image,
+  .about-me {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .self-image {
+    position: relative;
+    margin: 1rem 4rem;
+    float: left;
+  }
+
+  .about-me p {
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.125rem;
+    text-align: left;
+  }
+}

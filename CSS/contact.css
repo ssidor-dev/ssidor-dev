@@ -1,0 +1,72 @@
+/*Utilize mobile first design*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem !important;
+}
+
+input,
+textarea,
+select {
+  width: 20rem !important;
+}
+
+label {
+  font-weight: bold;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+/*styles for custom thank you page user is taken to after the form is submitted*/
+#thank-you {
+  text-align: center;
+  margin: 6rem;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*Add custom styles to the bootstrap form features*/
+.form-control,
+.form-select {
+  margin: 2rem;
+}
+
+.btn-send button {
+  display: inline-block;
+  margin: 25px;
+  padding: 1rem;
+  border: 5px solid black;
+  border-radius: 10px !important;
+  width: 8rem;
+  height: 4rem;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.btn-send button:hover {
+  color: white;
+  border: 5px solid white;
+}
+
+/*Media query to change font size of form items for screen sizes above 992px*/
+@media only screen and (min-width: 992px) {
+  input,
+  textarea,
+  select {
+    width: 40rem !important;
+  }
+}

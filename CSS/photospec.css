@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+h2 {
+  color: white;
+  font-family: "Didact Gothic", sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+p {
+  color: white;
+  font-family: "Didact Gothic", sans-serif;
+  text-align: center;
+  margin: 2rem;
+}
+
+a p {
+  font-style: italic;
+}
+
+footer {
+  position: sticky;
+  top: 100%;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.footer-nav-item {
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-nav-item:hover {
+  color: grey;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.photo img {
+  display: grid;
+  width: 35vw;
+  height: auto;
+  border: 8px solid black;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}

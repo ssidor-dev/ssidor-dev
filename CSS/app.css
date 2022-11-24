@@ -1,0 +1,201 @@
+/* 
+Mobile first design to account for mobile phone and tablet devices
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*Set the min-height to ensure the background image goes to bottom of page*/
+html {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/_DSC0180.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+/*Position: sticky along with the margin-top: auto to keep footer at bottom of page when different amounts of content are rendered.*/
+footer {
+  position: sticky;
+  top: 100%;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: auto;
+  font-weight: bold;
+}
+
+
+blockquote {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+blockquote p {
+  margin: 3rem 1.5rem 0 1.5rem;
+  font-weight: bold;
+}
+
+figcaption {
+  font-family: "Didact Gothic", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+}
+
+div a {
+  text-decoration: none;
+}
+
+/*Logo size for mobile devices*/
+#nav-logo {
+  width: 250px;
+  height: 29px;
+}
+
+/*Footer simple navigation styles*/
+
+.footer-nav-item {
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-nav-item:hover {
+  color: white;
+}
+
+/*Styles for images. I used VW so that the images would scale responsively between mobile and tablet devices*/
+.flex-layout img {
+  box-shadow: 5px 5px 35px 0.5px black;
+  border-radius: 5px;
+  width: 75vw;
+  height: auto;
+  margin-bottom: 4rem;
+}
+
+.flex-layout {
+  flex-grow: 1;
+}
+
+.flex-item h2 {
+  border: 5px solid black;
+  border-radius: 5px;
+  color: black;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 0.75rem;
+  font-family: "Didact Gothic", sans-serif;
+  letter-spacing: 0.125rem;
+  line-height: 0.8;
+}
+
+.flex-item a:hover h2 {
+  color: white;
+  border: 5px solid white;
+}
+
+/*Customer navbar styles for the main top navbar*/
+
+ul.dropdown-menu a {
+  color: black;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+ul.dropdown-menu a:hover {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.navbar {
+  font-family: "Didact Gothic", sans-serif;
+  padding-right: 10px !important;
+  font-size: 1.5rem;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar a:hover {
+  color: #fff !important;
+}
+
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Media query to handle screen sizes above 992px*/
+
+@media only screen and (min-width: 992px) {
+  blockquote {
+    font-size: 1.75rem;
+  }
+  figcaption {
+    font-size: 1.5rem;
+    margin-bottom: -4rem;
+  }
+
+  #nav-logo {
+    width: 400px;
+    height: 46px;
+    padding-left: 10px;
+  }
+
+  ul.dropdown-menu a:hover {
+    background-color: black !important;
+  }
+
+  ul.dropdown-menu a {
+    background-color: rgba(193, 187, 163, 50);
+  }
+
+  .hover-text {
+    position: relative;
+  }
+
+  .flex-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  .flex-item img {
+    width: 32vw;
+    height: auto;
+  }
+
+  .flex-item {
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
+}
